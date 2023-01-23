@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ulang Tahun Jasel</title>
+    <link href="dist/css/final.css" rel="stylesheet" />
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="https://instagram.com/omennns" class="block py-6 text-lg font-bold text-primary">omennns</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Tentang Kamu</a>
+                </li>
+                <li class="group">
+                  <a href="#portfolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Galeri</a>
+                </li>
+                <li class="group">
+                  <a href="#clients" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Reminders</a>
+                </li>
+                <li class="group">
+                  <a href="#blog" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Foto</a>
+                </li>
+                <li class="group">
+                  <a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Happy Birthday</a>
+                </li>
+                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">Hallo Sayang<span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Ajeng Puji Elistiani</span></h1>
+            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Bidadari & <span class="text-dark dark:text-white">My Girl Friend</span></h2>
+            <p class="mb-10 font-medium leading-relaxed text-secondary">Selamat datangg cantikkk, maaf ya aku cuma bisa ngasih ginian semogaa kamuu sukaa. Jangan lupa baca bismillah dulu wkwkw. Baca sampe abis yaa<span class="font-bold text-dark dark:text-white"></span></p>
+
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:right-0 lg:mt-9">
+              <img src="dist/img/Untitled-1.png" alt="Sandhika Galih" class="relative z-10 mx-auto max-w-full" />
+              <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-135">
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mb-10 w-full px-4 lg:w-1/2">
+            <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Kamu</h4>
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">Pesan dari aku </h2>
+            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">haii wanita cantikk, wanita yang sangat cantikkk terimakasi yaa selalu pengertian sama aku, kamu selalu jadi orang yang selalu nemanin aku mau gimanapun keadaanku, terimakasi telah menjadi diri kamu sendiri, terimakasi sudah support aku kapan pun dan dimana pun, terimakasi selalu melakukan yang terbaikk, i'm proud to have you jangan pernah lelah sama sikapku yaa. Terimakasi yaa, terimakasi udah jadi bagian dari cerita hidup aku i love u so muchh!!!!</p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">Something for you</h3>
+            <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
+              Aku punya sesuatu buat kamu, semoga kamu sukaa yaa. Klik di bawah satu-satu yaa cantikk
+            </p>
+            <div class="flex items-center">
+              <!-- Youtube -->
+              <a
+                href="https://www.youtube.com/watch?v=GenHZAlZjzI"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Joplin</title><path d="m20.969 0h-8.904c-.084 0-.152.068-.152.152v2.827c0 .095.077.172.172.172h1.221c.493 0 .894.38.937.863v13.378h-.001l-.017.363-.05.282c-.011.044-.02.089-.033.132-.081.258-.208.497-.384.708-.007.007-.015.014-.021.021-.054.063-.11.123-.172.18-.063.057-.13.11-.2.16-.498.353-1.169.508-1.918.436-.955-.089-1.903-.523-2.669-1.22-.765-.696-1.242-1.558-1.34-2.427-.089-.778.144-1.462.655-1.927.002-.001.003-.002.004-.003.02-.018.041-.033.062-.05.366-.307.842-.493 1.387-.544.006 0 .012-.001.017-.002l.298-.014.35.017c.008 0 .016.002.024.003.499.05.993.199 1.462.425.01 0 .022.003.036.011.143.079.17-.005.174-.061v-4.256c0-.122-.085-.23-.203-.256-2.527-.556-5.005.022-6.754 1.615-1.528 1.389-2.267 3.395-2.027 5.502.213 1.876 1.176 3.679 2.712 5.076 1.497 1.362 3.402 2.213 5.368 2.399.271.025.543.038.809.038 1.877 0 3.619-.644 4.905-1.814 1.218-1.109 1.948-2.632 2.055-4.288l.01-10.866h.001v-2.955c.011-.513.429-.926.945-.926h1.221c.095 0 .172-.077.172-.172v-2.827c0-.084-.068-.152-.152-.152z"/></svg>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://omennns.github.io/Projek-Testing/"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Academia</title><path d="M22.033 21.18L13.77.459H7.869l1.049 2.623L1.836 21.18C1.574 22.098.787 22.23 0 22.361v1.18h6.82v-1.18C4.984 22.23 3.934 21.967 4.721 20c.131-.131.656-1.574 1.311-3.41h8.393l1.18 3.016c.131.525.262.918.262 1.311 0 1.049-.918 1.443-2.623 1.443v1.18H24v-1.18c-.918-.13-1.705-.393-1.967-1.18zM6.82 14.361a363.303 363.303 0 0 0 3.279-8.525l3.41 8.525H6.82z"/></svg>
+              </a>
+
+              <!-- Twitter -->
+              <a
+                href="https://omennns.github.io/jasel/"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Scrutinizer CI</title><path d="M14.862 0L6.879.06a6.139 6.127 0 00-3.744 2.508 6.36 6.36 0 00-1.357 2.64l-.12.553-.12.857c-.06.8-.06 1.351.12 1.471h5.276c.06 0-.186-.246-.186-.672 0-.738.252-.924.552-1.23.552-.426 2.945-.12 4.728-.246 2.448 0 4.602-.06 4.848-.12 2.7-.427 5.03-2.388 5.522-4.536.12-.547.12-1.105.06-1.165C22.398 0 21.418 0 14.86 0zM9.194 9.007c-3.758-.015-7.47 0-7.53.06-.126.126-.06.798.06 1.35a5.64 5.64 0 001.843 2.761 7.549 7.549 0 003.312 1.59c.366.126 1.044.126 4.597.126 4.236 0 4.915.06 5.22.24a1.842 1.836 0 01.372.372c.18.24.18.307.18.98 0 .671-.065.731-.185 1.043a1.47 1.47 0 01-.426.366c-.186.12-.307.12-4.357.18-4.67 0-5.155 0-6.32.431a6.445 6.433 0 00-2.46 1.35c-1.163 1.04-1.841 2.203-1.961 3.428l.06.611a283.022 282.613 0 0015.404 0l.492-.12a4.543 4.537 0 00.737-.245l.367-.18a7.735 7.723 0 003.499-4.297 8.407 8.395 0 00-.373-6.06 8.527 8.521 0 00-2.328-2.88 6.937 6.925 0 00-2.394-.985c-.246-.06-4.051-.106-7.81-.12z"/></svg>
+              </a>
+
+              <!-- TikTok -->
+              <a
+                href="https://www.youtube.com/watch?v=yisNXceoQXs"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Etsy</title><path d="M8.559 2.445c0-.325.033-.52.59-.52h7.465c1.3 0 2.02 1.11 2.54 3.193l.42 1.666h1.27c.23-4.728.43-6.784.43-6.784s-3.196.36-5.09.36H6.635L1.521.196v1.37l1.725.326c1.21.24 1.5.496 1.6 1.606 0 0 .11 3.27.11 8.64 0 5.385-.09 8.61-.09 8.61 0 .973-.39 1.333-1.59 1.573l-1.722.33V24l5.13-.165h8.55c1.935 0 6.39.165 6.39.165.105-1.17.75-6.48.855-7.064h-1.2l-1.284 2.91c-1.005 2.28-2.476 2.445-4.11 2.445h-4.906c-1.63 0-2.415-.64-2.415-2.05V12.8s3.62 0 4.79.096c.912.064 1.463.325 1.76 1.598l.39 1.695h1.41l-.09-4.278.192-4.305h-1.391l-.45 1.89c-.283 1.244-.48 1.47-1.754 1.6-1.666.17-4.815.14-4.815.14V2.45h-.05z"/></svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a
+                href="https://open.spotify.com/playlist/3VSprDKlDmjabHhBAIJLLT?si=MfX__OlxTzS6fLA4GYfM2A&utm_source=copy-link&nd=1"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Lospec</title><path d="M4.23 0v24h15.541v-8.4004h-7.1719v3.5996H11.402V0z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Galeri Kita </h2>
+            <p class="text-md font-medium text-secondary md:text-lg">
+              Gak kerasa ya kita udah 5 tahun aja perasaan baru kemarin deh kita sekelas di Al-amin skrng kita udah mau kuliah aja, semogaa nanti kita bisa kuliah bareng yaa.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/portfolio/Ultah 1.jpg" alt="Landing Page" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Ulang Tahun Aku</h3>
+            <p class="text-base font-medium text-secondary">Kamu tau nggak saat itu perasaan aku gmnaa? saat itu aku tuh senengg bangettt, soalnya kamu orang yang pertama kasih aku surprise. terimakasi yaa 🥺</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/portfolio/IMG-20220123-WA0189.jpg" alt="E-Commerce" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Ulang Tahun Kamu</h3>
+            <p class="text-base font-medium text-secondary">Kalau ini foto pas ulang tahun kamu kemarin, saat itu aku juga seneng bangett loh liat kamu yang bahagia banget gara-gara disurprisein akuu</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/portfolio/Turnamen.jpg" alt="Technical Documentation" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Bomber POB Cup</h3>
+            <p class="text-base font-medium text-secondary">Disini juga aku bahagiaaa bangett, soalnya ini juara futsal pertama aku, dan tempatnya juga nggak deket. Kita pulang pergi tiap hari Karyamukti-Rancah selama 3 hari, alhamdulillah capek kita terbayarkan dengan juaraa</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/portfolio/adad.jpg" alt="Tribute Page" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Sport Festival Championship</h3>
+            <p class="text-base font-medium text-secondary">Disini kamu yang berhak mendapatkan medalinya, soalnya kamu selalu bikin aku semangat, tiap match kamu pasti nonton buat dukung aku. aku ingett pas Final buat rebutin juara kamu sakit, gara-gara kamu habis Kemah. Tapi kamu maksain nonton aku sampe malem dan alhamdulillah aku juara lagi.</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/portfolio/IMG_8147.JPG" alt="Tribute Page" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Pameran SMKN 1 Banjar</h3>
+            <p class="text-base font-medium text-secondary">Waktu itu aku ajak kamu ke pameran yang ada disekolah aku. Terus pulangnya aku kasih kamu Bunga Mawar buat permohonan maaf. Setelah itu kita makan di Ayam Geprek langganan wkwkw</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/portfolio/IMG_2270.JPG" alt="Tribute Page" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Tempat Apel </h3>
+            <p class="text-base font-medium text-secondary">Tempat ini dari pertama aku datang sampe skrng jadi tempat khusus akuu wkwkw, yang setiap minggu kita pasti apel di tempat ini. Terlalu banyak kenangan kita di tempat ini. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Clients Section Start -->
+    <section id="clients" class="bg-slate-800 pt-36 pb-32 dark:bg-slate-300">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 text-center">
+            <h2 class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">REMINDERS!!!!!</h2>
+            <p class="text-md font-medium text-secondary md:text-lg">ayangg kamu jangan telatt makann! jaga kesehatan jangan sering begadang kamu tuh. terus jangan keseringan makan pedess, intinya harus hidup sehatt. Ayang juga semangat ngejalanin hidupnya yaa jangan kebanyakan Insecure. Kamu udah sempurna dimata aku. 
+              Terus jangan pernah ngerasa sendiri, aku selalu ada buat ayangg.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clients Section End -->
+
+    <!-- Blog Section Start -->
+    <section id="blog" class="bg-slate-100 pt-36 pb-32 dark:bg-dark">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Pap dari ayang</h2>
+            <p class="text-md font-medium text-secondary md:text-lg">Kenapa sih kamu jadi orang tuh cantikkk bangettt apalagi kalau udah ngasih foto random atau foto yang lain.</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+              <img src="dist/img/Pap/1 (1).jpg" alt="Programming" class="w-full" />
+              <div class="py-8 px-6">
+                <h3>
+                  <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Yang paling cantikk</a>
+                </h3>
+                <p class="mb-6 text-base font-medium text-secondary">Semua foto dari kamu tuh cantikk cantikk aku bilangg cantikk tuh seriuss ayang, ga pernah boong kalau aku bilangg cantikk tuh emng cantikkk semua orangg jugaa tauu. apalagi foto yang ini hadeuhhh cantikkk bangettt pokonyaaa. oh iya jangan lupa masyaallah heheh </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+              <img src="dist/img/Pap/1 (2).jpg" alt="Mechanical Keyboard" class="w-full" />
+              <div class="py-8 px-6">
+                <h3>
+                  <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Yang paling keren</a>
+                </h3>
+                <p class="mb-6 text-base font-medium text-secondary">Dari semua foto kayanya aku sukaa foto inii, soalnya foto ini tuh udahh cantikk (masyaallah) teruss kerenn teruss ah pokonyaa foto ini the besttt!!!</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+              <img src="dist/img/Pap/1 (3).jpg" alt="Coffee" class="w-full" />
+              <div class="py-8 px-6">
+                <h3>
+                  <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Yang paling maniss</a>
+                </h3>
+                <p class="mb-6 text-base font-medium text-secondary">Kenapa aku pilih foto ini karena foto ini tuh maniss bangettt dari senyumnyaa dari wajahnyaa masyaallah cantikk benerr byyy</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+              <img src="dist/img/Pap/1 (4).jpg" alt="Coffee" class="w-full" />
+              <div class="py-8 px-6">
+                <h3>
+                  <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Yang paling baguss</a>
+                </h3>
+                <p class="mb-6 text-base font-medium text-secondary">semua foto dari kamu tuh semuanyaa cantikk bangettt (masyaallah) apalagii inii byy arghhh cantikkk cantikkk bangetttt</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+              <img src="dist/img/Pap/1 (5).jpg" alt="Coffee" class="w-full" />
+              <div class="py-8 px-6">
+                <h3>
+                  <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Yang paling sholehah</a>
+                </h3>
+                <p class="mb-6 text-base font-medium text-secondary">Kalau cewek cantikk belom tentu sholehah tapi kalau cewek sholehah udah pasti cantikk contohnya inii udahh cantikkk baikkk maniss sholehah argh ini mah udahh lengkap pokonyaa hehee. masyaallah </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+              <img src="dist/img/Pap/IMG_3327.JPG" alt="Coffee" class="w-full" />
+              <div class="py-8 px-6">
+                <h3>
+                  <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Yang paling anggun</a>
+                </h3>
+                <p class="mb-6 text-base font-medium text-secondary">Pokonya semua udah diborong sama kamu dari mulai cantikk, keren, sholehah, maniss, anggun, pokonyaa kamu udah perfect ayangggg. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">HAPPY BIRTHDAY CANTIKK</h2>
+            <p class="text-md font-medium text-secondary md:text-lg">Semoga panjang umur sehat selalu, diberi kelancaran dalam segala urusan, apa yang ayang inginkan semoga segera tercapai aamiin, selalu jadi diri ayang sendiri, dan tambah sukses. intinya do'a yang terbaikk buatt ayang dari akuu. Semoga suka ya kado dari akuu maaf kalau jelekk sayanggg. Sekali lagii Happy Birthday Cantikkk barrakallah fii umrikk wish you all the besttt </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark pt-10` pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+        </div>
+
+        <div class="w-full pt-10 border-t border-slate-700">
+        </div>
+          <p class="text-center text-lg  font-semibold text-slate-500">
+            Dibuat dengan sepenuh <span class="text-pink-500">hati</span> dan sungguh-sungguh oleh <a href="https://instagram.com/omennns" target="_blank" class="font-bold text-primary">Omennns</a>, semogaa sukaa🥰 
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top Start -->
+    <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Back to top End -->
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
